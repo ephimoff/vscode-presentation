@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VS Code and Shell. Tips and tricks</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <meta name="description" content="A set of tips and tricks that I gathered over time">
+  <meta name="author" content="Anton Efimov">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  
+
+<div class="reveal">
+    <div class="slides">
+
+        <section>
+    <h1>VS Code and Shell</h1>
+    <h3>Tips and tricks</h3>
+    <p>
+        <small>by <a href="https://github.com/ephimoff/vscode-presentation">Anton Efimov</a></small>
+    </p>
+</section>
+        <section>
+    <img src="lib/img/vscode.png" alt="">
+</section>
+        <section>
+    <h2>Why VS Code</h2>
+    <ul>
+        <li>Extensions and customisation</li>
+        <li>Integrated GIT</li>
+        <li>Status panel</li>
+        <li>Integrated terminal</li>
+        <li>Ligature fonts</li>
+        <li>Open source</li>
+        <li>Personal preferences</li>
+    </ul>
+</section>
+                        <section>
+					<section>
+						<h2>Customisation</h2>
+						<ul>
+							<li>Extensions</li>
+							<li>Alebaster Theme</li>
+							<li>Material icon pack</li>
+							<li>FiraCode</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Extensions</h2>
+						<img src="lib/img/extensions.png" alt="">
+					</section>
+					<section>
+						<h2>Extensions</h2>
+						<ul>
+							<li>Recommendations</li>
+							<li>Popular extensions</li>
+							<li>Enable/disable extensions</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Alebaster theme</h2>
+						<img src="lib/img/alebaster.png" alt="" style="width:48%; float:left;">					
+						<ul style="width:48%; float:right; margin-top: .9em; font-size: .8em;">
+							<li>Minimal amount of highlighting</li>
+							<li>Does not highlight standard language keywords (if, else, function etc.)</li>
+							<li>Highlights comments</li>
+							<li>No font variations (bold, italic)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Material Icon Theme</h2>
+						<img src="lib/img/material.png" alt="" style="width:60%;">
+					</section>
+					<section>
+						<h2>FiraCode</h2>
+						<img src="lib/img/fira.png" alt="" style="width:60%;">
+					</section>
+				</section>
+        <section>
+					<section>
+						<h2>Text formatting</h2>
+						<ul>
+							<li>Log File highlighter </li>
+							<li>Text Alignment</li>
+							<li>Readme preview</li>
+							<li>Copying/moving lines</li>
+							<li>Code formatting</li>
+							<li>Trimming trailing spaces</li>
+							<li>Selections</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Log file highlighter</h2>
+						<img src="lib/img/highlighter.png" alt="" style="width:80%;">
+					</section>
+					<section>
+						<h2>Text Alignment</h2>
+						<img src="lib/img/align.gif" alt="">
+						<p class="hotkey">⌘ ⇧ P &rarr; Align</p>
+					</section>
+					<section>
+						<h2>Readme preview</h2>
+						<img src="lib/img/readme.png" alt="" style="width:70%;">
+						<p class="hotkey">⌘ K, V</p>
+					</section>
+					<section>
+						<h2>Copying lines</h2>
+						<img src="lib/img/copy_line.gif" alt="">
+						<p class="hotkey">⌥ ⇧ ↓</p>
+						<p class="hotkey">⌥ ⇧ ↑</p>
+					</section>
+					<section>
+						<h2>Moving lines</h2>
+						<img src="lib/img/move_line.gif" alt="" style="width:48%; float:left;">
+						<div style="width:48%; float:right; padding-top:15%">
+							<p class="hotkey">⌥ ↓</p>
+							<p class="hotkey">⌥ ↑</p>
+						</div>
+					</section>
+					<section>
+						<h2>Code formatting</h2>
+						<img src="lib/img/code_formatting.gif" alt="" style="width:70%;">
+						<p class="hotkey">⌘ K, ⌘ F</p>
+					</section>
+					<section>
+						<h2>Trimming white spaces</h2>
+						<img src="lib/img/trim.gif" alt="">
+						<p class="hotkey">⌘ ⇧ X</p>
+					</section>
+					<section>
+						<section id="fragments">
+							<h2>Selections</h2>
+							<div style="width:48%; float:left;">
+								<img src="lib/img/current_line.gif" alt="">
+								<p class="hotkey">⌘ I</p>
+							</div>
+							<div class="fragment" style="width:48%; float:right;">
+								<img src="lib/img/multicursor.gif" alt=""  style="margin-bottom: 11%;">
+								<p class="hotkey">⌥ ⌘ ↑</p>
+								<p class="hotkey">⌥ ⌘ ↓</p>
+							</div>
+						</section>
+					</section>
+				</section>
+        <section>
+					<section>
+						<h2>Productivity</h2>
+						<ul>
+							<li>Command palette</li>
+							<li>Quick navigation</li>
+							<li>Refactoring, peek and references</li>
+							<li>Lint </li>
+							<li>Key bindings and Settings files</li>
+							<li>CLI tool</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Command palette</h2>
+						<img src="lib/img/command.gif" alt="" style="width:60%;">
+						<p class="hotkey">⌘ ⇧ P</p>
+					</section>
+					<section>
+						<h2>Quick navigation</h2>
+						<img src="lib/img/quick.gif" alt="" style="width:70%;">
+						<p class="hotkey">⌘ P</p>
+					</section>
+					<section>
+						<h2>Peek</h2>
+						<img src="lib/img/peek.gif" alt="" style="width:70%;">
+						<p class="hotkey">⌥ F12</p>
+					</section>
+					<section>
+						<h2>Go to definition</h2>
+						<img src="lib/img/goto_definition.gif" alt="" style="width:48%; float:left;">
+						<div style="width:48%; float:right; padding-top:20%">
+							<p class="hotkey">F12</p>
+						</div>
+					</section>
+					<section>
+						<h2>Find all references</h2>
+						<img src="lib/img/find_all_references.gif" alt="" style="width:60%;">
+						<p class="hotkey">⇧ F12</p>
+					</section>
+					<section>
+						<h2>Renaming</h2>
+						<img src="lib/img/rename.gif" alt="" style="width:60%;">
+						<p class="hotkey">F2</p>
+					</section>
+				</section>
+        <section>
+					<section>
+						<h2>Linting</h2>
+						<ul>
+							<li><a href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint">Markdownlint</a></li>
+							<li><a href="https://marketplace.visualstudio.com/items?itemName=hoovercj.ruby-linter">Ruby-linter</a></li>
+							<li><a href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.python">Python</a></li>
+							<li><a href="https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck">Shellcheck</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Linting</h2>
+						<blockquote cite="https://en.wikipedia.org/wiki/Lint_(software)">
+							&ldquo;Linting is the process of running a program that will analyse code for potential errors. &rdquo;
+						</blockquote>
+						<p style="float: right;">&mdash; <a href="https://en.wikipedia.org/wiki/Lint_(software)">Wikipedia</a></p>
+					</section>
+					<section>
+						<h2>Markdownlint</h2>
+						<img src="lib/img/markdownlint.png" alt="" style="width:80%;">
+					</section>
+				</section>
+        <section>
+					<section>
+						<h2>Settings</h2>
+						<div style="width:48%; float:left;">
+							<img src="lib/img/settings1.png" alt="" style="width:60%;">
+							<img src="lib/img/settings2.png" alt="" style="width:60%;">
+						</div>
+						<div style="width:48%; float:right;">
+							<img src="lib/img/settings3.png" alt="" style="width:50%;">
+						</div>
+					</section>
+					<section>
+						<h2>Settings</h2>
+							<img src="lib/img/settings4.png" alt="" style="width:80%;">
+							<img src="lib/img/settings5.png" alt="" style="width:80%;">
+					</section>
+				</section>
+        <section>
+					<section>
+						<h2>Snippets</h2>
+						<ul>
+							<li>Snippets in marketplace</li>
+							<li>Custom snippets</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Snippets</h2>
+						<img src="lib/img/snippets1.gif" alt="" style="width:80%;">
+					</section>
+					<section>
+						<h2>Snippets</h2>
+						<div style="width:48%; float:left;">
+							<img src="lib/img/snippets2.png" alt="">
+						</div>
+						<div style="width:48%; float:right;">
+							<img src="lib/img/snippets3.png" alt="">
+						</div>
+					</section>
+				</section>
+        <section>
+					<h2>Debugging tool</h2>
+					<img src="lib/img/debug.gif" alt="" style="width:80%;">
+				</section>
+        <section>
+					<section>
+						<h2>Integrated git</h2>
+						<ul>
+							<li>Diffs</li>
+							<li>Branches</li>
+							<li>Staging and committing</li>
+							<li>Merge conflicts</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Diffs</h2>
+						<div style="clear:both;">
+							<img src="lib/img/git_icon.png" alt="">
+						</div>
+						<img src="lib/img/diff.png" alt="" style="width:55%;">
+					</section>
+					<section>
+						<h2>Branches</h2>
+						<img src="lib/img/branches.gif" alt="" style="width:80%;">
+					</section>
+					<section>
+						<h2>Staging and committing</h2>
+						<div style="width:48%; float:left;">
+							<img src="lib/img/stage.gif" alt="">
+						</div>
+						<div style="width:48%; float:right;">
+							<img src="lib/img/commit.gif" alt="">
+						</div>
+					</section>
+					<section>
+						<h2>Merge conflicts</h2>
+						<img src="lib/img/conflict.png" alt="" style="width:80%;">
+					</section>
+					<section>
+						<h2>Git Lens</h2>
+						<img src="lib/img/gitlens.gif" alt="" style="width:80%;">
+					</section>
+				</section>
+        <section>
+					<h2>Integrated terminal</h2>
+					<img src="lib/img/terminal.png" alt="" style="width:80%;">
+				</section>
+        <section>
+					<h2>CLI tool</h2>
+					<img src="lib/img/cli.png" alt="" style="width:80%;">
+				</section>
+        <section>
+					<img src="lib/img/iterm.png" alt="">
+				</section>
+        <section>
+					<h2>Shells</h2>
+					<ul>
+						<li>Fish</li>
+						<li>zsh</li>
+						<li>oh-my-zsh
+							<ul>
+								<li>Pluggins</li>
+								<li>Themes</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+        <section>
+					<h2>Fish</h2>
+					<ul>
+						<li>Autosuggestions</li>
+						<li>Colouring</li>
+						<li>Scripting</li>
+						<li>Syntax highlighting</li>
+						<li>Better tab completions</li>
+					</ul>
+				</section>
+        <section>
+					<section>
+						<h2>om-my-zsh</h2>
+						<ul>
+							<li>Plugins</li>
+							<li>Themes</li>
+						</ul>
+					</section>
+					<section>
+						<h2>om-my-zsh</h2>
+						<ul>
+							<li>git - <span class="hotkey">adds aliases</span></li>
+							<li>brew - <span class="hotkey">adds aliases</span></li>
+							<li>copydir - <span class="hotkey">copies current directory’s path to the clipboard</span></li>
+							<li>z - <span class="hotkey">tracks your most used directories, based on ‘frecency'.</span>
+								<pre><code class="hljs bash" style="word-wrap: break-word;">$ &gt; z solution</code></pre>
+							</li>
+							<li>osx - <span class="hotkey">see next slide</span></li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## osx plugin
+							- `tab` - Open the current directory in a new tab
+							- `pfs` - Return the current Finder selection
+							- `cdf` - cd to the current Finder directory
+							- `man-preview` - Open a specified man page in Preview app
+							- `itunes` - Control iTunes
+							- `spotify` - Control Spotify and search by artist, album, track and etc.
+						</script>
+					</section>
+					<section>
+						<h2>om-my-zsh</h2>
+						<img src="lib/img/oh-my-zsh.png" alt="" style="width:80%;">
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<p>Orion specific</p>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">alias rdep="rgrav deploy -R unison_frontend:0 -R unison_backend:0 -R unison_haproxy:0 -R connect:0 -p ec2"
+alias rinv="rgrav invoke -p ec2"
+						</code></pre>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">$ &gt; rdep</code></pre>
+						<p>More examples</p>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">
+# Recursively delete `.DS_Store` files and Clean up LaunchServices to remove duplicates in the “Open With” menu
+alias cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder && find . -type f -name '*.DS_Store' -ls -delete"
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; gem update; gem cleanup; npm update'
+						</code></pre>	
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<p>To see your current aliases</p>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">$ &gt; alias</code></pre>
+					</section>
+				</section>
+        <section>
+					<h2>iTerm</h2>
+					<ul>
+						<li>FiraCode (only for 3.1)</li>
+					</ul>
+				</section>
+        <section>
+					<h2>dotfiles</h2>
+					<ul>
+						<li>A way to organise your settings and apps</li>
+						<li>Can and should be stored in git</li>
+						<li>Can and should be forked</li>
+					</ul>
+				</section>
+        <section>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="https://code.visualstudio.com/">VS Code</a>, <a href="https://github.com/Microsoft/vscode-tips-and-tricks">other tips and tricks</a> and <a href="https://github.com/viatsko/awesome-vscode">awesome-vscode</a></li>
+						<li><a href="https://marketplace.visualstudio.com/items?itemName=tonsky.theme-alabaster">Alebaster theme</a>, <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">icons</a> and <a href="https://github.com/tonsky/FiraCode">FiraCode</a></li>
+						<li><a href="http://zsh.sourceforge.net/">zsh</a>, <a href="https://fishshell.com/">fish</a>, <a href="http://ohmyz.sh/">oh-my-zsh</a> (+ <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins-Overview">plugins</a> and <a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">themes</a>)</li>
+						<li><a href="https://iterm2.com/">iTerm</a></li>
+						<li><a href="https://github.com/ephimoff/dotfiles">My dotfiles</a>, <a href="https://github.com/craighurley/dotfiles">Craig's ones</a> and <a href="https://dotfiles.github.io">a collection</a> of other people's</li>
+					</ul>
+				</section>
+        <section>
+    <h2>Tools</h2>
+    <p>This presentation was made using the following tools:</p>
+    <ul>
+        <li><a href="http://gulpjs.com">Gulp</a> - task engine</li>
+        <li><a href="https://yarnpkg.com/en/">Yarn</a> - dependency manager</li>
+        <li><a href="https://mozilla.github.io/nunjucks/">Nunjucks</a> - templating language</li>
+        <li><a href="http://stylus-lang.com">Stylus</a> - CSS preprocessor</li>
+    </ul>
+</section>
+        <section style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						- This presentation's <a href="https://github.com/ephimoff/vscode-presentation">source code</a> <br>
+						- Thanks for watching
+					</p>
+				</section>
+
+    </div>
+</div>
+
+
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      // Transition style
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+</html>

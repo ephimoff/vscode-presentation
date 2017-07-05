@@ -1,0 +1,22 @@
+{
+  "name": "vs-code-presentation",
+  "version": "1.0.0",
+  "description": "A set of tips and tricks that I gathered over time",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Efimov",
+  "license": "MIT",
+  "repository": {},
+  "main": "index.js"
+}

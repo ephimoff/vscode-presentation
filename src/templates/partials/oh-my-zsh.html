@@ -1,0 +1,56 @@
+<section>
+					<section>
+						<h2>om-my-zsh</h2>
+						<ul>
+							<li>Plugins</li>
+							<li>Themes</li>
+						</ul>
+					</section>
+					<section>
+						<h2>om-my-zsh</h2>
+						<ul>
+							<li>git - <span class="hotkey">adds aliases</span></li>
+							<li>brew - <span class="hotkey">adds aliases</span></li>
+							<li>copydir - <span class="hotkey">copies current directory’s path to the clipboard</span></li>
+							<li>z - <span class="hotkey">tracks your most used directories, based on ‘frecency'.</span>
+								<pre><code class="hljs bash" style="word-wrap: break-word;">$ &gt; z solution</code></pre>
+							</li>
+							<li>osx - <span class="hotkey">see next slide</span></li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## osx plugin
+							- `tab` - Open the current directory in a new tab
+							- `pfs` - Return the current Finder selection
+							- `cdf` - cd to the current Finder directory
+							- `man-preview` - Open a specified man page in Preview app
+							- `itunes` - Control iTunes
+							- `spotify` - Control Spotify and search by artist, album, track and etc.
+						</script>
+					</section>
+					<section>
+						<h2>om-my-zsh</h2>
+						<img src="lib/img/oh-my-zsh.png" alt="" style="width:80%;">
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<p>Orion specific</p>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">alias rdep="rgrav deploy -R unison_frontend:0 -R unison_backend:0 -R unison_haproxy:0 -R connect:0 -p ec2"
+alias rinv="rgrav invoke -p ec2"
+						</code></pre>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">$ &gt; rdep</code></pre>
+						<p>More examples</p>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">
+# Recursively delete `.DS_Store` files and Clean up LaunchServices to remove duplicates in the “Open With” menu
+alias cleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder && find . -type f -name '*.DS_Store' -ls -delete"
+# Get macOS Software Updates, and update installed Ruby gems, Homebrew and their installed packages
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; gem update; gem cleanup; npm update'
+						</code></pre>	
+					</section>
+					<section>
+						<h2>Aliases</h2>
+						<p>To see your current aliases</p>
+						<pre><code class="hljs bash" style="word-wrap: break-word;">$ &gt; alias</code></pre>
+					</section>
+				</section>

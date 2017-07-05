@@ -1,0 +1,35 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<div class="reveal">
+    <div class="slides">
+
+        {% include "partials/title.html" %}
+        {% include "partials/vscode.html" %}
+        {% include "partials/whyvs.html" %}
+        {% include "partials/customisation.html" %}
+        {% include "partials/formatting.html" %}
+        {% include "partials/productivity.html" %}
+        {% include "partials/linting.html" %}
+        {% include "partials/settings.html" %}
+        {% include "partials/snippets.html" %}
+        {% include "partials/debugging.html" %}
+        {% include "partials/git.html" %}
+        {% include "partials/terminal.html" %}
+        {% include "partials/cli.html" %}
+        {% include "partials/iterm.html" %}
+        {% include "partials/shells.html" %}
+        {% include "partials/fish.html" %}
+        {% include "partials/oh-my-zsh.html" %}
+        {% include "partials/iterm2.html" %}
+        {% include "partials/dotfiles.html" %}
+        {% include "partials/links.html" %}
+        {% include "partials/tools.html" %}
+        {% include "partials/end.html" %}
+
+    </div>
+</div>
+
+{% endblock %}
