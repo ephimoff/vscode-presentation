@@ -16,6 +16,8 @@ A set of tips and tricks that I gathered over time
     ```
 1. Open `index.html` in any browser
 
+Or just go to [https://ephimoff.github.io/vscode-presentation/](https://ephimoff.github.io/vscode-presentation/)
+
 ## Acknowedgements
 
 The presentation is made using [reveal.js](https://github.com/hakimel/reveal.js) plugin.
