@@ -13,7 +13,8 @@
     "gulp-notify": "^3.0.0",
     "gulp-nunjucks-render": "^2.2.1",
     "gulp-rename": "^1.2.2",
-    "gulp-stylus": "^2.6.0"
+    "gulp-stylus": "^2.6.0",
+    "jshint": "^2.9.5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

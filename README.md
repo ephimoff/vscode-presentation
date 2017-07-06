@@ -9,10 +9,10 @@ A set of tips and tricks that I gathered over time
     ```sh
     git clone https://github.com/ephimoff/vscode-presentation.git
     ```
-1. Go to the clonned folder:
+1. Go to the docs folder:
 
     ```sh
-    cd vscode-presentation
+    cd vscode-presentation/docs/
     ```
 1. Open `index.html` in any browser
 
