@@ -1,5 +1,3 @@
-'use strict';
-
 var gulp           = require('gulp'),
     browserSync    = require('browser-sync').create(),
     nunjucksRender = require('gulp-nunjucks-render'),
@@ -71,7 +69,7 @@ gulp.task('nunjucks', function () {
     .pipe(gulp.dest('docs'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 gulp.task('watch', ['browserSync', 'css', 'img', 'stylus', 'js', 'lib', 'nunjucks'], function () {
@@ -100,5 +98,5 @@ gulp.task('browserSync', function () {
     server: {
       baseDir: 'docs'
     },
-  })
-})
+  });
+});
