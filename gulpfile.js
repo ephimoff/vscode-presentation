@@ -6,7 +6,7 @@ var gulp           = require('gulp'),
     rename         = require('gulp-rename'),
     stylus         = require('gulp-stylus'),
     imagemin       = require('gulp-imagemin'),
-    jshint         = require('gulp-jshint')
+    jshint         = require('gulp-jshint');
 
 // Lets us type "gulp" on the command line and run all of our tasks
 gulp.task('default', ['stylus', 'img', 'js', 'css', 'plugin', 'nunjucks', 'lib', 'watch']);
@@ -48,7 +48,7 @@ gulp.task('css', function () {
     .pipe(gulp.dest('docs/css'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
 });
 
 // Copy everything from lib and plugins to docs
